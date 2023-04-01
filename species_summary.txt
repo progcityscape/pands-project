@@ -1,0 +1,5 @@
+species
+Adelie       152
+Chinstrap     68
+Gentoo       124
+Name: species, dtype: int64
