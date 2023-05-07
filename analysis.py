@@ -60,8 +60,7 @@ correlation = iris.corr(method='pearson')
 # https://www.scaler.com/topics/pandas/pivot-table-pandas/
 # the dataframe will now show the mean for each variable vs. species
 
-species_p_table = pd.pivot_table(data = iris,
-                            columns = ['species'])
+species_p_table = pd.pivot_table(data = iris, columns = ['species'])
                             
 # output the dataframes to a .txt file
 with open('species_summary.txt', mode='w') as file_object:
