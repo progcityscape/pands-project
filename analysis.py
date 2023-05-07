@@ -15,7 +15,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # first step: load the dataset into a format that can be used by python https://datatofish.com/import-csv-file-python-using-pandas/
-# leaving out path as it will not apply if the program is run from a different location
+# leaving out path, as it will not apply if the program is run from a different location.
 
 # source for iris data: https://gist.githubusercontent.com/curran/a08a1080b88344b0c8a7/raw/0e7a9b0a5d22642a06d3d5b9bcbad9890c8ee534/iris.csv
 # 'r' is placed before the file name to deal with any special characters in the path
@@ -38,10 +38,6 @@ try:
 except:
     FILENAME = (r'iris_data3.csv')
     iris = pd.read_csv(FILENAME)
-
-finally:
-    print (iris)
-
 
 # find the total amount of samples by species
 # https://pythoninoffice.com/sumif-and-countif-in-pandas/#google_vignette shows us how to count and sum by variable as well as other functions, such as mean
@@ -74,7 +70,7 @@ with open('species_summary.txt', mode='w') as file_object:
             print (f'Extra Analysis: \nPivot Table - Mean for each variable per species:\n{species_p_table}\n', file = file_object)
 # https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/ - exploring ways to create plots
 # https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib - used this to work out why the second png was saving with 6 species (doubling up on the original 3).
-# decide to create a function to create the png files by using different combinations of the variables 
+# decided to create a function to create the png files by using different combinations of the variables 
 # (assignment asked for each pair so assuming this is not limited to sepal/sepal and petal/petal)
 # the following code block is unwieldy and could be made much more efficient - need to research how to do this.
 # this function creates png files for combinations of variables with differing dimensions (e.g. length v width)
@@ -147,7 +143,7 @@ variable_names_2(b,a)
 # the following code creates a histogram for each
 # https://realpython.com/python-histograms/
 # https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/?ref=lbp
-# use the code provided at the above link to create a function that will output to a .png file for each of the variables
+# used the code provided at the above link to create a function that will output to a .png file for each of the variables
 
 
 def histogram_var (variable, dimension):
@@ -169,4 +165,7 @@ histogram_var(a, "width")
 histogram_var(a, "length")
 histogram_var(b, "width")
 histogram_var(b, "length")
+
+
+# next we will do some additional analysis on the dataset
 
