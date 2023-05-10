@@ -132,6 +132,8 @@ if extra == 'n':
     # end the program
     print ('Goodbye!')
 elif extra == 'y':    
+    # Prompt the User with column headings
+    print("The column labels of the iris DataFrame are: ", *iris.columns, sep = "   ")
     column_heading = input ('Specify a column heading for the categorical variable e.g. "species":')
     while extra == 'y':
         species_identify = input('Choose a specific entry from your categorical variable e.g. "setosa":' )
