@@ -66,8 +66,12 @@ For some extra analysis, I have created a codeblock that filters for the categor
 ![setosa_histogram_sepal_length](https://github.com/progcityscape/pands-project/assets/121309223/7e05c222-dcb9-4ee0-a365-a051f0ba86ec)
 
 # Fisher's Dataset
-
+Collected by Edgar Anderson, an American botanist, the data that would eventually comprise the Iris Dataset was compiled from plants found on the Gaspe Peninsula. [^4] The eponymous biologist, Ronald A Fisher, later published the data; it contains 3 species of Iris (setosa, virginica and versicolor) with 50 samples of each, divided into 4 numerical variables (sepal length and width, petal length and width).[^5] [^3] 
+The 
 
 
 [^1]: Data Analysis with the Tidyverse, Accessed 28 March 2023, <http://cbdm-01.zdv.uni-mainz.de/~galanisl/danalysis/>
 [^2]: Pivot Tables in Pandas, Accessed 1 April 2023, <https://www.scaler.com/topics/pandas/pivot-table-pandas/>
+[^3]: Unveiling the mysteries of the Iris dataset: A comprehensive analysis and Machine Learning Classification, Accessed 11 May 2023, <https://levelup.gitconnected.com/unveiling-the-mysteries-of-the-iris-dataset-a-comprehensive-analysis-and-machine-learning-f5c4f9dbcd6d>
+[^4]: Signa, Accessed 19 March 2023, <https://wiki.irises.org/pub/Hist/Info1986SIGNA37/SIGNA_37.pdf>
+[^5]: The Use of multiple measurements in taxonomic problems, Accessed 19 March 2023, <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x>
