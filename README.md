@@ -1,7 +1,5 @@
 # pands-project
-First commit [^1] consists of only the iris dataset and a test file to ensure that the link is correctly set up between the github repository and the folder on my system.
 
-Before considering the background and history of the Iris Dataset, I would briefly like to present the following principles that will shed light on and guide our analysis of the aforementioned dataset:
 ## Creating the Analysis File
 ### Import 
 First we will import the data using one of Python's built in libraries, Pandas. 
@@ -51,7 +49,7 @@ Having created our analysis as outlined above, it is now necessary to communicat
 
 
 (The six headings used to outline the process of creating the analysis file are adapted from _Data Analysis with the Tidyverse_)[^1].
-# Extra Analysis
+## Extra Analysis
 For some extra analysis, I have created a codeblock that filters for the categorical variable column (species) and displays a histogram showing one of the variables for a particular species.  As we will see later, the program has the ability to read in another dataset and examine for the same elements, as long as the dataset, and in particular its variables, are analagous in some way to those of the Iris Dataset.
 ````
         species_identify = input('Choose a specific entry from your categorical variable e.g. "setosa":' )
@@ -65,11 +63,11 @@ For some extra analysis, I have created a codeblock that filters for the categor
 ````
 ![setosa_histogram_sepal_length](https://github.com/progcityscape/pands-project/assets/121309223/7e05c222-dcb9-4ee0-a365-a051f0ba86ec)
 
-# 2. Fisher's Dataset
+## 2. Fisher's Dataset
 Collected by Edgar Anderson, an American botanist, the data that would eventually comprise the Iris Dataset was compiled from plants found on the Gaspe Peninsula. [^4] The eponymous biologist, Ronald A Fisher, later published the data; it contains 3 species of Iris (setosa, virginica and versicolor) with 50 samples of each, divided into 4 numerical variables (sepal length and width, petal length and width).[^5]\
 
 The data within the dataset is both suitably concise not to overwhelm the user while also containing enough data to be able to draw meaningful conclusions and comparisons.\
-# 3. Extension
+## 3. Extension
 Despite its tidiness, I initially found the great value of this dataset somewhat obscure.  I personally found that the best way to understand its worth was to create a comparison dataset containing data closer to my own interests; I located a set of statistics on the NBA website, specifically the season by season statistics, going back 50 years, for current champions the Golden State Warriors [(see the original stats here)](https://www.nba.com/stats/team/1610612744/seasons).  I added stats for the same time period from the LA Lakers and the Portland Trailblazers (like the 3 species of Irises - three California based basketball teams).  I then carried out the following steps on the data to prepare it for use with the analysis.py program (I used excel to prepare the CSV file due to time constraints but documented the steps to be attempted in Python at a later date):
 * Converted the 'Season Column' to single years rather than a hyphenated season.
 * Moved Team column to the last column to mirror the Iris Dataset (this step was later made redundant by an option in the program)
@@ -103,10 +101,10 @@ Figure 3: Win Percentage versus Playoff Record
 
 It demonstrates that the seasons with a '0%' playoff record (either a straight loss in the first round or failure to reach the playoffs) generally (though not always) followed a poor regular season (0.2 to 0.6).  The value of a dataset such as the Iris Dataset is the linear separability - 3 Iris species with 50 samples each with one species linearly separable from the other two (the others are not linearly separable from each other)[^6].  Effectively, it is possible to draw a straight line through the objects in a linearly separable data set. [^7]
 
-# 4. Conclusion
+## 4. Conclusion
 An extremely useful and informative dataset for data scientists, the Fisher Dataset and the accompanying development of the analysis.py file have revealed the great potential that Python has to use programming for the importing, tidying, transforming and visualising/modelling data, enabling the communication of the findings to stakeholders.  I am looking forward to building on this knowledge to explore many areas of interest with both existing datasets and those that can be developed independently. 
 
-# Appendix A: Selected References from Coding Analysis.py
+## Appendix A: Selected References from Coding Analysis.py
 <https://www.w3schools.com/python/pandas/pandas_getting_started.asp>\
 <https://realpython.com/python-histograms/>\
 <https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/?ref=lbp>\
