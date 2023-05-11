@@ -2,7 +2,7 @@
 First commit [^1] consists of only the iris dataset and a test file to ensure that the link is correctly set up between the github repository and the folder on my system.
 
 Before considering the background and history of the Iris Dataset, I would briefly like to present the following principles that will shed light on and guide our analysis of the aforementioned dataset:
-# Creating th Analysis File
+# Creating the Analysis File
 ### Import 
 First we will import the data using one of Python's built in libraries, Pandas. 
 We also give the option for the user to import their own dataset (this is just to demonstrate the possibility of using other datasets - we would need significant extra program code that is outside the current scope to present the data in the same format as the Fisher Iris Dataset).  The following simple code was contained within a Try/Except block in case an invalid file or dataset was inputted:\
