@@ -11,7 +11,7 @@ We also give the option for the user to import their own dataset (this is just t
 ### Tidy 
 The advantage of using the Iris Dataset, and perhaps a reason it has been such a great tool for data scientists, is that it is already tidy - it fits the following description perfectly.  
 >in a tidy dataset each row is an observation or a sample and each column is a variable. [^1]
-
+However, I will outline later an investigation of NBA statistics, using the analysis.py file created for the Iris Dataset, that includes a dataset that requiring some tidying.
 ### Transform 
 It is possible to present some basic information about the dataset, such as a summary of the variables and also their correlation, directly upon importing the data.  However to do some extra analysis, (finding the mean for each variable within each species) I found it useful to transform the data.  Realising that what I was searching for was a pivot table function, I discovered that exact replicas of many of excel's functions can be utilised with python code.[^2]\
 `species_p_table = pd.pivot_table(data = iris, columns = ['species'])`
