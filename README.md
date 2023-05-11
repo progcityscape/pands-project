@@ -1,6 +1,6 @@
 # pands-project
 # Exploring The Iris Dataset
-## Creating the Analysis File
+## 1.Creating the Analysis File
 ### Import 
 First we will import the data using one of Python's built in libraries, Pandas. 
 We also give the option for the user to import their own dataset (this is just to demonstrate the possibility of using other datasets - we would need significant extra program code that is outside the current scope to present the data in the same format as the Fisher Iris Dataset).  The following simple code was contained within a Try/Except block in case an invalid file or dataset was inputted:\
@@ -49,7 +49,7 @@ Having created our analysis as outlined above, it is now necessary to communicat
 
 
 (The six headings used to outline the process of creating the analysis file are adapted from _Data Analysis with the Tidyverse_)[^1].
-## Extra Analysis
+## 2. Extra Analysis
 For some extra analysis, I have created a codeblock that filters for the categorical variable column (species) and displays a histogram showing one of the variables for a particular species.  As we will see later, the program has the ability to read in another dataset and examine for the same elements, as long as the dataset, and in particular its variables, are analagous in some way to those of the Iris Dataset.
 ````
         species_identify = input('Choose a specific entry from your categorical variable e.g. "setosa":' )
@@ -63,11 +63,17 @@ For some extra analysis, I have created a codeblock that filters for the categor
 ````
 ![setosa_histogram_sepal_length](https://github.com/progcityscape/pands-project/assets/121309223/7e05c222-dcb9-4ee0-a365-a051f0ba86ec)
 
-## 2. Fisher's Dataset
+## 3. How the Program Works
+To run the program you can use the [iris data file](https://github.com/progcityscape/pands-project/blob/main/iris_data3.csv) included in this repository or any raw CSV file containing the Iris Data.
+* Run the program by typing 'python analysis.py'.
+* Press enter to use the default data set.
+* The .png files (histograms and scatterplots) and .txt file (species summary) will be created.  They are included in this repository for reference.
+* You will then be given the option to create further analysis files that isolate a particular species (the categorical variable).  Histograms will be created for the numerical variables you choose and the .png filenames will be prefaced by the categorical variable (in the case of the Iris Dataset, 'virginica' for example.  A sample .png file using extended analysis is included in this repository for reference.
+## 4. Fisher's Dataset
 Collected by Edgar Anderson, an American botanist, the data that would eventually comprise the Iris Dataset was compiled from plants found on the Gaspe Peninsula. [^4] The eponymous biologist, Ronald A Fisher, later published the data; it contains 3 species of Iris (setosa, virginica and versicolor) with 50 samples of each, divided into 4 numerical variables (sepal length and width, petal length and width).[^5]\
 
 The data within the dataset is both suitably concise not to overwhelm the user while also containing enough data to be able to draw meaningful conclusions and comparisons.\
-## 3. Extension
+## 5. Extension
 Despite its tidiness, I initially found the great value of this dataset somewhat obscure.  I personally found that the best way to understand its worth was to create a comparison dataset containing data closer to my own interests; I located a set of statistics on the NBA website, specifically the season by season statistics, going back 50 years, for current champions the Golden State Warriors [(see the original stats here)](https://www.nba.com/stats/team/1610612744/seasons).  I added stats for the same time period from the LA Lakers and the Portland Trailblazers (like the 3 species of Irises - three California based basketball teams).  I then carried out the following steps on the data to prepare it for use with the analysis.py program (I used excel to prepare the CSV file due to time constraints but documented the steps to be attempted in Python at a later date):
 * Converted the 'Season Column' to single years rather than a hyphenated season.
 * Moved Team column to the last column to mirror the Iris Dataset (this step was later made redundant by an option in the program)
@@ -101,7 +107,7 @@ Figure 3: Win Percentage versus Playoff Record
 
 It demonstrates that the seasons with a '0%' playoff record (either a straight loss in the first round or failure to reach the playoffs) generally (though not always) followed a poor regular season (0.2 to 0.6).  The value of a dataset such as the Iris Dataset is the linear separability - 3 Iris species with 50 samples each with one species linearly separable from the other two (the others are not linearly separable from each other)[^6].  Effectively, it is possible to draw a straight line through the objects in a linearly separable data set. [^7]
 
-## 4. Conclusion
+## 6. Conclusion
 An extremely useful and informative dataset for data scientists, the Fisher Dataset and the accompanying development of the analysis.py file have revealed the great potential that Python has to use programming for the importing, tidying, transforming and visualising/modelling data, enabling the communication of the findings to stakeholders.  I am looking forward to building on this knowledge to explore many areas of interest with both existing datasets and those that can be developed independently. 
 
 ## Appendix A: Selected References from Coding Analysis.py
